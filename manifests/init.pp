@@ -418,7 +418,7 @@ class django (
     monitor::url { 'django_url':
       url     => $django::url_check,
       pattern => $django::url_pattern,
-      target  => $django::params::monitor_target,
+      target  => $django::monitor_target,
       tool    => $django::monitor_tool,
       enable  => $django::manage_monitor,
     }
