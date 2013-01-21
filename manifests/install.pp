@@ -22,7 +22,7 @@ class django::install inherits django {
       }
     }
 
-    package: {
+    pip: {
       package { 'django':
         ensure   => $django::manage_package,
         name     => $django::package,
