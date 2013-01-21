@@ -418,7 +418,6 @@ class django (
     monitor::url { 'django_url':
       url     => $django::url_check,
       pattern => $django::url_pattern,
-      port    => $django::port,
       target  => $django::params::monitor_target,
       tool    => $django::monitor_tool,
       enable  => $django::manage_monitor,
